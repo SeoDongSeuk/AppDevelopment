@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:eng_quiz_app/main_menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Englsih App1'),
+        title: Text('Englsih App'),
         backgroundColor: Colors.white,
         titleTextStyle: TextStyle(color: Colors.black),
         // shape 둥굴게 하기
@@ -77,10 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   List<dynamic> _widgetOptions = [
-    Text(
-      'Favorites',
-      style: TextStyle(fontSize: 30),
-    ),
+    MainMenu(),
     Text(
       'Music',
       style: TextStyle(fontSize: 30),
