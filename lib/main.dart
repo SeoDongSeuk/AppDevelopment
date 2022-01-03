@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,11 +29,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(
-            'Englsih App',
-          ),
-          backgroundColor: Colors.blue,
-          titleTextStyle: TextStyle(color: Colors.black)),
+        centerTitle: true,
+        title: Text('Englsih App'),
+        backgroundColor: Colors.white,
+        titleTextStyle: TextStyle(color: Colors.black),
+        // shape 둥굴게 하기
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(16))),
+      ),
       body: Container(child: Text('Test')),
     );
   }
