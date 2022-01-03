@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Englsih App'),
         backgroundColor: Colors.white,
         titleTextStyle: TextStyle(color: Colors.black),
+        elevation: 0,
         // shape 둥굴게 하기
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(16))),
@@ -48,6 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
         unselectedItemColor: Colors.white.withOpacity(.60),
         selectedFontSize: 14,
         unselectedFontSize: 14,
+        // label false
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         currentIndex: _selectedIndex, //현재 선택된 Index
         onTap: (int index) {
           setState(() {
@@ -57,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
         items: [
           BottomNavigationBarItem(
             label: 'Favorites',
-            icon: Icon(Icons.favorite),
+            icon: Icon(Icons.menu_outlined),
           ),
           BottomNavigationBarItem(
             label: 'Music',
