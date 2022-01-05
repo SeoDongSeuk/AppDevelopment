@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
         items: [
           BottomNavigationBarItem(
             label: 'Favorites',
-            icon: Icon(Icons.menu_outlined),
+            icon: Icon(Icons.home),
           ),
           BottomNavigationBarItem(
             label: 'Music',

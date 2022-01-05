@@ -8,8 +8,14 @@ class MainMenu extends StatefulWidget {
 class _MainMenuState extends State<MainMenu> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("meinmenu"),
+    return Scaffold(
+      body: ListView(
+        padding: EdgeInsets.all(8),
+        children: <Widget>[
+          Text('초등학생'),
+          Text('중학생'),
+        ],
+      ),
     );
   }
 }
